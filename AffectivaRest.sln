@@ -5,6 +5,17 @@ VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AffectivaRest", "AffectivaRest\AffectivaRest.csproj", "{D2283043-4114-47D3-A01A-7B775011E5D5}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PublishScripts", "PublishScripts", "{5E8DE5FD-8076-4B97-86F2-120B5BBA325B}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\AzureVMPublishModule.psm1 = PublishScripts\AzureVMPublishModule.psm1
+		PublishScripts\Publish-WebApplicationVM.ps1 = PublishScripts\Publish-WebApplicationVM.ps1
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Configurations", "Configurations", "{C1B97CA1-72D0-4BF1-9D40-7D5F5F33A2E5}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\Configurations\AffectivaRest-WAWS-dev.json = PublishScripts\Configurations\AffectivaRest-WAWS-dev.json
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +29,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C1B97CA1-72D0-4BF1-9D40-7D5F5F33A2E5} = {5E8DE5FD-8076-4B97-86F2-120B5BBA325B}
 	EndGlobalSection
 EndGlobal
